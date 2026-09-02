@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="invoiceTable">
+    <h3>Invoice Sheet</h3>
+    <table id="sheet0" class="sheet">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Rate/Cost</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="item0">
+          <td><input name="item" type="text" value=""></td>
+          <td><input class="calc" name="quantity" type="number" value="0.00" size="10"></td>
+          <td><input class="calc" name="cost" type="number" value="0.00" size="10"></td>
+          <td><input name="itemTotal" type="number" value="0.00" size="10" readonly></td>
+        </tr>
+        <tr id="item1">
+          <td><input name="item" type="text" value=""></td>
+          <td><input class="calc" name="quantity" type="number" value="0.00" size="10"></td>
+          <td><input class="calc" name="cost" type="number" value="0.00" size="10"></td>
+          <td><input name="itemTotal" type="number" value="0.00" size="10" readonly></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Sub Total:</td>
+          <td><input id="subTotal" name="subTotal" type="number" value="0.00" size="10" readonly></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Tax: <input class="calc" id="tax" name="tax" type="number" value="6" size="3">%</td>
+          <td><input id="taxTotal" type="number" value="0.00" size="10" readonly></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Total</td>
+          <td><input id="total" name="total" type="number" value="0.00" size="10" readonly></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
